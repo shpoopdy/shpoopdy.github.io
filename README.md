@@ -1,2 +1,2 @@
-# shpoopdy.github.io
-Web
+# Website for Shpoopdy
+Well, this is it.
