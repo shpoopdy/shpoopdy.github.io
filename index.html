@@ -33,6 +33,13 @@ article {
   background-color: #f1f1f1;
 }
   
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
 </style>
   
 </head>
