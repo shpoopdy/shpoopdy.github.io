@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social img {
+  padding: 0.75rem;
+  width: 2.50rem;
+  height: 2.50rem;
+}
