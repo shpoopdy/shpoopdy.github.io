@@ -1,74 +1,160 @@
-/* Article */
-article {
-  padding: 0.5in 0;
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
 
-  display: grid;
-  grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
-
-  background: linear-gradient(hsl(55, 100%, 96%), white 6.5rem);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
 
-article * { grid-column: start / end; }
-
-/* If the width is 8.5in or less it will use this size instead, i.e. mobile */
-@media (max-width: 8.5in) {
-  article { grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr; }
+body {
+    line-height:1;
 }
 
-/* article-figure */
-.size-1 { grid-column: 4 / 5; }
-.size-2 { grid-column: 4 / 5; }
-.size-3 { grid-column: 4 / 5; }
-.size-4 { grid-column: 4 / 5; }
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
 
-.size-1 img { width: 100%; }
+nav ul {
+    list-style:none;
+}
 
-figcaption {
-  margin-top: 0.5rem;
+blockquote, q {
+    quotes:none;
+}
 
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* Mikey's Edits Below */
+
+
+body {
+  background: #1d1f21;
+}
+
+h1 {
+  color: #ced0d3;
+}
+
+.index-h2 {
+  color: #606367;
+}
+
+time {
+  color: #606367;
+}
+
+p {
+  color: #ced0d3;
+}
+
+
+
+
+.main-nav {
   display: flex;
-  justify-content: center;
+  padding: 35px;
+}
+
+/* This little push class was used to split the navbar in the way I have it currently*/
+.push {
+    margin-left: auto;
 }
 
 
-/* Article-text */
-h2, p { margin-bottom: 2.4rem; }
+/* This part does the color transition when hovered on.*/
 
-h1 { font: 700 2.0rem/1.2 "Roboto"; color: hsl(000, 0%, 33%); }
-h2 { font: 400 1.5rem/1.2 "Roboto"; color: hsl(000, 0%, 0%); }
-time { font: 700 1.0rem/1.2 "Roboto"; color: hsl(000, 0%, 0%); }
-h3 { font: 700 1.0rem/1.2 "Roboto"; color: hsl(000, 0%, 0%); }
-p { font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 0%, 0%); }
-figcaption p { font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 000%, 33%); }
+.main-nav li {
 
-@media (max-width: 8.5in) { :root { font-size: 18px; } }
-@media (max-width: 5.0in) { :root { font-size: 16px; } }
-
-
-/* article-social */
-.social {
-  display: flex;
-  justify-content: center;
-}
-
-.social img {
-  padding: 0.75rem;
-  width: 1.50rem;
-  height: 1.50rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
 }
 
 
-/* reset */
-:root { font: 20px/1.2 "Roboto", sans-serif; }
-
-body,
-body * {
-  margin: unset;
-  box-sizing: unset;
-  padding: unset;
-  font-size: unset;
-  color: unset;
-  text-decoration: unset;
+.main-nav a {
+    color: #afaeae;
+    text-decoration: none;
+    transition: color 0.5s;
 }
 
-figure * { display: block; }
+
+.main-nav a:hover {
+    color: black;
+}
