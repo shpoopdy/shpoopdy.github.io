@@ -197,9 +197,10 @@ ul {
   height: 525px;
   width: 100%;
   background-image: url("../images/me.jpg");
-  background-position: 0%, 0%, 50%, 50%;
+  background-repeat: no-repeat;
+  background-position: 0%, 0%, 0%, 0%;
   background-attachment: scroll, fixed;
-  background-size: auto, cover;
+  background-size:cover;
 }
 
 
