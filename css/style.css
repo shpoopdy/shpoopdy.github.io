@@ -206,8 +206,10 @@ ul {
 /* footer */
 
 footer {
-  width: auto;
-  height: auto;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
   background-color: #161719;
 }
 
