@@ -147,9 +147,16 @@ p {
     transition: border-bottom 0.5s;
 }
 
+ul {
+  list-style-type: none;
+}
+
+
+
 
 .main-nav a {
-    color: #afaeae;
+    font-size: 30px;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -157,4 +164,15 @@ p {
 
 .main-nav a:hover {
     color: black;
+}
+
+
+/* header background */
+.header_img {
+  height: 525px;
+  width: 100%;
+  background-image: url("../images/me.jpg");
+  background-position: 0%, 0%, 50%, 50%;
+  background-attachment: scroll, fixed;
+  background-size: auto, cover;
 }
