@@ -126,6 +126,31 @@ p {
 }
 
 
+.block-content {
+  margin: auto;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 96px 32px;
+}
+
+.block-content h1 {
+  display: block;
+  font-size: 28px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.block-content p {
+  display: block;
+  font-size: 18px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 .main-nav {
@@ -175,4 +200,17 @@ ul {
   background-position: 0%, 0%, 50%, 50%;
   background-attachment: scroll, fixed;
   background-size: auto, cover;
+}
+
+
+/* footer */
+
+footer {
+  width: auto;
+  height: auto;
+  background-color: #161719;
+}
+
+.social {
+  text-align: center;
 }
