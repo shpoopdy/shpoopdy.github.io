@@ -103,9 +103,6 @@ ul {
   list-style-type: none;
 }
 
-
-
-
 .main-nav a {
     font-size: 30px;
     color: #ffffff;
@@ -113,9 +110,33 @@ ul {
     transition: color 0.5s;
 }
 
-
 .main-nav a:hover {
     color: black;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end; /*Centered the links, alongside padding*/
+  height: 70px;
+  margin: 0;
+  background-color: #161719;
+}
+
+.navbar li {
+  padding-bottom: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.navbar a {
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navbar a:hover {
+  color: #38476b;
 }
 
 
